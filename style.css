@@ -1,0 +1,421 @@
+/* Основные стили для body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Светлый фон */
+}
+
+/* Стили для header */
+header {
+    background: linear-gradient(90deg, #2b8a3e, #00c6ff); /* Градиентный фон */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Добавлено для эффекта фона */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Увеличенный размер заголовка */
+}
+
+/* Стили для корзины и ссылок */
+.cart {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.auth-links {
+    margin-top: 10px;
+}
+
+/* Центрируем ссылки авторизации */
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 12px;
+    border-radius: 8px; /* Более округлые углы */
+    transition: background 0.3s, transform 0.2s;
+}
+
+.auth-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05); /* Увеличение ссылки при наведении */
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Стили для товаров */
+.product {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    display: inline-block;
+    width: 240px; /* Увеличенная ширина */
+    border-radius: 10px; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Более выраженная тень */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25); /* Увеличенная тень при наведении */
+}
+
+/* Стили для кнопок */
+button {
+    background: #007bff; /* Более яркий цвет */
+    color: white;
+    border: none;
+    padding: 12px 18px; /* Увеличенные отступы */
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1em; /* Увеличенный шрифт */
+}
+
+button:hover {
+    background: #0056b3; /* Темнее при наведении */
+    transform: scale(1.05);
+}
+
+/* Стили для footer */
+footer {
+    background: linear-gradient(90deg, #f1f1f1, #e9ecef);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для корзины */
+#cart-items {
+    margin: 20px 0;
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.cart-item:hover {
+    transform: translateY(-3px);
+}
+
+#clear-cart {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+#clear-cart:hover {
+    background-color: #c9302c;
+}
+
+#logo {
+    display: block; 
+    margin: 0 auto;
+    max-width: 200px; /* Увеличение логотипа */
+}
+
+.product-gallery {
+    text-align: center;
+}
+
+.image-container {
+    margin-bottom: 10px;
+}
+
+#main-image {
+    width: 100%;
+    max-width: 320px; /* Увеличение максимальной ширины */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 70px; /* Увеличение размера для миниатюр */
+    height: auto;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border 0.3s, transform 0.2s; /* Плавный эффект при наведении */
+}
+
+.thumbnail:hover {
+    border: 2px solid #007BFF;
+    transform: scale(1.05); /* Увеличение миниатюры при наведении */
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.discount {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #dc3545; /* Цвет для старая цена */
+    margin-right: 10px;
+}
+
+.discounted-price {
+    font-weight: bold;
+    color: #28a745; /* Цвет для новой цены */
+    font-size: 1.1em; /* Увеличенный шрифт для новой цены */
+}
+.price {
+    color: green; /* Установка зеленого цвета для цены */
+    font-weight: bold; /* Увеличение яркости текста (не обязательно) */
+}
+/* Общие стили (можно оставить, если они не конфликтуют с главной страницей) */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Стили для страницы регистрации */
+.registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.registration header {
+    margin-bottom: 20px;
+}
+
+.registration h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.registration .form-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.registration .form-group {
+    margin-bottom: 15px;
+}
+
+.registration label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.registration input[type="text"],
+.registration input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.registration input[type="text"]:focus,
+.registration input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.registration .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+.registration .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.registration .back-btn {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+    margin-top: 10px;
+}
+
+.registration .back-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.registration footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-size: 0.8em;
+}
+/* Стили для страницы входа */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login header {
+    margin-bottom: 20px;
+}
+
+.login h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.login .form-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.login .form-group {
+    margin-bottom: 15px;
+}
+
+.login label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.login .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+}
+
+.login .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.login .back-btn {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+    margin-top: 10px;
+}
+
+.login .back-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.login footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-size: 0.8em;
+}
+#pay-button {
+    background-color: #28a745; /* Замените красный цвет на зеленый */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Добавляем отступ сверху */
+}
+#pay-button:hover {
+    background-color: #218838; /* Темно-зеленый цвет при наведении */
+}
+#logout-button {
+    background-color: transparent; /* Убирает фоновый цвет */
+    border: none; /* Убирает рамку */
+    color: #000; /* Цвет текста (можете изменить на любой другой) */
+    font-size: 16px; /* Размер шрифта кнопки */
+    cursor: pointer; /* Изменяет курсор на указатель при наведении */
+}
+
+#logout-button:hover {
+    text-decoration: underline; /* Подчеркивание текста при наведении (необязательно) */
+
+.telegram-group {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.telegram-group h4 {
+    margin: 0;
+}
+
+.telegram-group a {
+    text-decoration: none;
+    color: #0088cc; /* Цвет текста ссылки */
+    font-weight: bold;
+}

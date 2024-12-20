@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .form-group input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+        .form-group input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .back-btn {
+            background-color: #6c757d;
+            margin-top: 10px;
+        }
+        .back-btn:hover {
+            background-color: #5a6268;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("register-form");
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Предотвращаем стандартное поведение формы
+
+                const username = document.getElementById("reg-username").value;
+                const password = document.getElementById("reg-password").value;
+
+                // Сохранение данных в localStorage
+                localStorage.setItem("username", username);
+                localStorage.setItem("password", password);
+
+                alert("Регистрация успешно завершена!");
+                window.location.href = "login.html"; // Перенаправление на страницу входа
+            });
+        });
+    </script>
+</head>
+<body class="registration">
+    <header>
+        <h1>Регистрация</h1>
+    </header>
+    
+    <main>
+        <div class="form-container">
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="reg-username">Имя пользователя:</label>
+                    <input type="text" id="reg-username" placeholder="Введите имя пользователя" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-password">Пароль:</label>
+                    <input type="password" id="reg-password" placeholder="Введите пароль" required>
+                </div>
+
+                <button type="submit" class="btn">Регистрация</button>
+            </form>
+            <button id="backButton" onclick="window.history.back()" class="btn back-btn">Назад</button>
+        </div>
+<div class="telegram-group">
+    <h4>Присоединяйтесь к нам в Telegram!</h4>
+    <a href="https://t.me/+On2UfiVHtrNkY2Ey" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.svgrepo.com/show/452115/telegram.svg" width="100" height="75" alt="Telegram Logo" style="background: transparent;">
+    </a>
+</div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2024. Все права защищены.</p>
+    </footer>
+</body>
+</html>

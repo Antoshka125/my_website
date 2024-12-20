@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название товара</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-gallery {
+            text-align: center;
+        }
+
+        .image-container {
+            margin-bottom: 10px;
+        }
+
+        #main-image {
+            width: 300px; /* Установите нужный размер */
+            height: auto;
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+        }
+
+        .thumbnail {
+            width: 60px; /* Установите нужный размер для миниатюр */
+            height: auto;
+            margin: 0 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .thumbnail:hover {
+            border: 2px solid #007BFF; /* Цвет рамки при наведении */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gamer's Paradise</h1>
+        <!-- Добавьте навигацию, если необходимо -->
+    </header>
+
+    <main>
+        <h2>GTA 5</h2>
+
+        <!-- Раздел с изображением товара и галереей -->
+       <div class="product-gallery">
+    <div class="image-container">
+        <img id="main-image" src="https://avatars.mds.yandex.net/i?id=5be3da626cfea461c352ccf7e3775a38ef5b02ba-9838103-images-thumbs&n=13" alt="GTA 5t" />
+    </div>
+    <div class="thumbnails">
+        <img class="thumbnail" src="https://avatars.mds.yandex.net/i?id=5be3da626cfea461c352ccf7e3775a38ef5b02ba-9838103-images-thumbs&n=13" alt="GTA 5" onclick="changeImage('https://avatars.mds.yandex.net/i?id=5be3da626cfea461c352ccf7e3775a38ef5b02ba-9838103-images-thumbs&n=13')" />
+        <img class="thumbnail" src="https://avatars.mds.yandex.net/i?id=3bb0ba780d080893acfaaa3d365dd84f99e57bc3-9214559-images-thumbs&n=13" alt="Товар 2" onclick="changeImage('https://avatars.mds.yandex.net/i?id=3bb0ba780d080893acfaaa3d365dd84f99e57bc3-9214559-images-thumbs&n=13')" />
+        <img class="thumbnail" src="https://avatars.mds.yandex.net/i?id=af46f38021a800c37ad2442701e39db713943845-8194143-images-thumbs&n=13" alt="Товар 3" onclick="changeImage('https://avatars.mds.yandex.net/i?id=af46f38021a800c37ad2442701e39db713943845-8194143-images-thumbs&n=13')" />
+    </div>
+</div>
+
+<script>
+function changeImage(imageUrl) {
+    document.getElementById('main-image').src = imageUrl;
+}
+</script>
+                <!-- Добавьте дополнительные миниатюры по мере необходимости -->
+            </div>
+        </div>
+
+        <!-- Раздел с описанием товара -->
+        <section class="product-description">
+            <h3>Описание</h3>
+            <p>Откройте для себя мир преступности и приключений в GTA 5!</p>
+        </section>
+
+        <!-- Раздел с характеристиками товара -->
+        <section class="product-specifications">
+            <h3>Характеристики</h3>
+            <ul>
+                <li>Характеристика 1: Значение</li>
+                <li>Характеристика 2: Значение</li>
+                <li>Характеристика 3: Значение</li>
+                <!-- Добавьте дополнительные характеристики, если нужно -->
+            </ul>
+        </section>
+
+        <!-- Раздел с отзывами о товаре -->
+        <section class="product-reviews">
+            <h3>Отзывы</h3>
+            <ul>
+                <li>Отзыв 1: Довольный клиент 1</li>
+                <li>Отзыв 2: Довольный клиент 2</li>
+                <!-- Добавьте больше отзывов по мере необходимости -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gamer's Paradise</p>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+    </script>
+</body>
+</html>

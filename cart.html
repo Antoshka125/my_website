@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #4a90e2; /* Более мягкий цвет заголовка */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень под заголовком */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #cart-items {
+            background: white;
+            border-radius: 10px; /* Увеличенное скругление углов */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Более выраженная тень */
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #eaeaea;
+            transition: background-color 0.3s; /* Плавный переход цвета фона */
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .cart-item:hover {
+            background-color: #f7f7f7; /* Цвет фона при наведении */
+        }
+
+        .item-name {
+            font-weight: 700;
+            color: #333;
+        }
+
+        .item-price {
+            color: #28a745;
+            font-weight: 600; /* Сделали цену более жирной */
+        }
+
+        #clear-cart {
+            background-color: #ff0000; /* Цвет кнопки */
+            color: white;
+            border: none;
+            border-radius: 5px; /* Закругленные углы */
+            padding: 12px 24px; /* Увеличенные отступы */
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s; /* Плавный переход фона и эффекта поднятия */
+            margin-top: 10px;
+            width: 100%; /* Ширина на всю ширину контейнера */
+            max-width: 200px; /* Максимальная ширина кнопки */
+        }
+
+        #clear-cart:hover {
+            background-color: #e60000; /* Цвет при наведении */
+            transform: translateY(-2px); /* Поднимаем кнопки при наведении */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8em;
+            background-color: #f1f1f1;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #cart-count {
+            font-weight: bold;
+            margin: 10px 0;
+            display: inline-block;
+            font-size: 1.1em; /* Увеличение размера шрифта */
+            color: #333; /* Цвет текста счетчика */
+        }
+
+        button.remove-from-cart {
+            background: transparent; /* Прозрачный фон для кнопки удаления */
+            color: #dc3545; /* Красный цвет текста */
+            border: none; /* Убираем рамку */
+            cursor: pointer; /* Указатель при наведении */
+            font-size: 0.9em; /* Уменьшенный размер текста */
+            transition: color 0.3s; /* Плавный переход цвета текста */
+        }
+
+        button.remove-from-cart:hover {
+            color: #b71c1c; /* Более темный цвет при наведении */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Корзина</h1>
+        <div id="cart-count">0</div> <!-- Элемент для отображения количества товаров в корзине -->
+    </header>
+    
+    <main>
+        <div id="cart-items">
+            <!-- Пример элементов корзины -->
+            <div class="cart-item">
+                <span class="item-name">Товар 1</span>
+                <span class="item-price">₽1000</span>
+                <button class="remove-from-cart">Удалить</button>
+            </div>
+            <div class="cart-item">
+                <span class="item-name">Товар 2</span>
+                <span class="item-price">₽1500</span>
+                <button class="remove-from-cart">Удалить</button>
+            </div>
+            <div class="cart-item">
+                <span class="item-name">Товар 3</span>
+                <span class="item-price">₽2000</span>
+                <button class="remove-from-cart">Удалить</button>
+            </div>
+        </div>
+	<div id="total-price">Итого: ₽0</div> <!-- Элемент для отображения итоговой суммы -->
+        <button id="clear-cart">Очистить корзину</button>
+        <button id="pay-button" onclick="location.href='payment.html'">Оплатить</button> <!-- Кнопка оплаты -->
+<div class="telegram-group">
+    <h4>Присоединяйтесь к нам в Telegram!</h4>
+    <a href="https://t.me/+On2UfiVHtrNkY2Ey" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.svgrepo.com/show/452115/telegram.svg" width="100" height="75" alt="Telegram Logo" style="background: transparent;">
+    </a>
+</div>
+    </main>
+    
+    <footer>
+        <p>Copyright © 2024. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

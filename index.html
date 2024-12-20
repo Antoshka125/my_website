@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer's Paradise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Добавление логотипа -->
+        <img src="file:///C:/Users/user/Downloads/загруженное.png" alt="Логотип Gamer's Paradise" id="logo" width="150" height="auto">
+        <div class="cart">
+            Корзина: <span id="cart-count">0</span> товаров
+        </div>
+        <div class="auth-links">
+            <a href="login.html">Вход</a> | <a href="register.html">Регистрация</a> | <a href="cart.html">Корзина</a>
+        </div>
+    </header>
+
+    <main id="product-list">
+        <h2>Товары со скидкой</h2>
+
+<div id="filtered-products">
+<div class="product" data-id="1" data-platform="pc" data-genre="action" data-price="3499">
+    <img src="https://avatars.mds.yandex.net/i?id=f3b06d948022abb8974dd22dbe295d0f764f29c9-5107659-images-thumbs&n=13" alt="GTA 5" width="200" height="200"/>
+    <h3>GTA 5</h3>
+     <p>Цена: <span class="original-price" style="text-decoration: line-through;">3499 ₽</span> <span class="discounted-price">1749 ₽</span></p> <!-- Зачеркнутая цена -->
+            <p class="discount">Скидка: 50%!</p> <!-- Добавлено поле для скидки -->
+    <p>Описание: Откройте для себя мир преступности и приключений в GTA 5!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="2" data-platform="pc" data-genre="rpg" data-price="2999">
+    <img src="https://avatars.mds.yandex.net/i?id=c7af4e1502653edfbe2ca15aa5223e3001d8153a-3593759-images-thumbs&n=13" alt="Cyberpunk 2077" width="200" height="200"/>
+    <h3>Cyberpunk 2077</h3>
+     <p>Цена: <span class="original-price" style="text-decoration: line-through;">2999 ₽</span> <span class="discounted-price">1949 ₽</span></p> <!-- Зачеркнутая цена -->
+            <p class="discount">Скидка: 35%!</p> <!-- Добавлено поле для скидки -->
+    <p>Описание: Погрузитесь в мир будущего и станьте главным героем Cyberpunk 2077.</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+    <div class="product" data-id="3" data-platform="pc" data-genre="action" data-price="2499">
+        <a href="minecraft.html" class="product-link">
+            <img src="https://avatars.mds.yandex.net/i?id=5be3da626cfea461c352ccf7e3775a38ef5b02ba-9838103-images-thumbs&n=13" alt="Minecraft" width="200" height="183"/>
+            <h3>Minecraft</h3>
+            <p>Цена: <span class="original-price" style="text-decoration: line-through;">2499 ₽</span> <span class="discounted-price">1999 ₽</span></p> <!-- Зачеркнутая цена -->
+            <p class="discount">Скидка: 20%!</p> <!-- Добавлено поле для скидки -->
+            <p>Описание: Исследуйте бесконечные миры и стройте все, что можете вообразить в Minecraft!</p>
+        </a>
+        <button class="add-to-cart">Добавить в корзину</button>
+    </div>
+</div>      <h2>Товары</h2>
+       
+
+<div class="product" data-id="4" data-platform="ps4" data-genre="action" data-price="3999">
+    <img src="https://avatars.mds.yandex.net/i?id=ab381be37283bc717f07b4c0cbeb3132de12e534-3939383-images-thumbs&n=13" alt="FIFA 22" width="200" height="200"/>
+    <h3>FIFA 22</h3>
+    <p class="price">Цена: 3999 ₽</p>  <!-- Добавлен класс price -->
+    <p>Описание: Испытайте свои футбольные навыки в FIFA 22 и станьте чемпионом мира!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+ <div class="product" data-id="5" data-platform="xbox" data-genre="action" data-price="2799">
+    <img src="https://avatars.mds.yandex.net/i?id=ff534a06725ad274ded89b92510eed29849ec26f-6636599-images-thumbs&n=13" alt="Forza Horizon 5" width="200" height="183"/>
+    <h3>Forza Horizon 5</h3>
+    <p class="price">Цена: 2799 ₽</p>  <!-- Добавлен класс price -->
+    <p>Описание: Крутые гонки и незабываемые поездки в открытом мире в Forza Horizon 5!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="6" data-platform="nintendo" data-genre="adventure" data-price="3499">
+    <img src="https://avatars.mds.yandex.net/i?id=5cd2936320e797fb651002ac72938ad32fff1b2baa69845a-5104820-images-thumbs&n=13" alt="The Legend of Zelda: Breath of the Wild" width="200" height="160"/>
+    <h3>The Legend of Zelda: Breath of the Wild</h3>
+    <p class="price">Цена: 3499 ₽</p>  <!-- Добавлен класс price -->
+    <p>Описание: Исследуйте огромный мир Хайрула в The Legend of Zelda: Breath of the Wild!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<!-- Новые товары -->
+<div class="product" data-id="7" data-platform="pc" data-genre="strategy" data-price="1999">
+    <img src="https://avatars.mds.yandex.net/i?id=2341aefc665d67ba749dbaf96e809405effab4a5-11908978-images-thumbs&n=13" alt="Age of Empires IV" width="200" height="200"/>
+    <h3>Age of Empires IV</h3>
+    <p class="price">Цена: 1999 ₽</p>  <!-- Добавлен класс price -->
+    <p>Описание: Возразите свою империю в Age of Empires IV и управляйте историей!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="8" data-platform="pc" data-genre="rpg" data-price="2099">
+    <img src="https://avatars.mds.yandex.net/i?id=c96a036de8b912810a1a15d7b38df1198c558e5f-10629685-images-thumbs&n=13" alt="The Witcher 3: Wild Hunt" width="200" height="182"/>
+    <h3>The Witcher 3: Wild Hunt</h3>
+    <p class="price">Цена: 2099 ₽</p>  <!-- Добавлен класс price -->
+    <p>Описание: Погрузитесь в эпическое приключение с Геральтом из Ривии в The Witcher 3!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="9" data-platform="ps4" data-genre="horror" data-price="3499">
+    <img src="https://avatars.mds.yandex.net/i?id=6c95a50e9368176f74850f1882bc8e01eb38835c-12752977-images-thumbs&n=13" alt="Resident Evil Village" width="200" height="200"/>
+    <h3>Resident Evil Village</h3>
+    <p class="price">Цена: 3499 ₽</p>  <!-- Добавлен класс price -->
+    <p>Описание: Встречайте ужас в Resident Evil Village, последней части культовой франшизы!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+            <div class="product" data-id="10" data-platform="xbox" data-genre="adventure" data-price="3999">
+    <img src="https://avatars.mds.yandex.net/i?id=11dce5255b1311fa427c83b081899a7de8d0056e-3925299-images-thumbs&n=13" alt="Halo Infinite" width="200" height="200"/>
+    <h3>Halo Infinite</h3>
+    <p class="price">Цена: 3999 ₽</p> <!-- Добавлен класс price -->
+    <p>Описание: Вернитесь в вселенную Halo и сразитесь с новыми врагами в Halo Infinite!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="11" data-platform="nintendo" data-genre="platformer" data-price="2999">
+    <img src="https://avatars.mds.yandex.net/i?id=468b7cdf50f1a20976976f0f537e109f30da1d6ad19f06f4-10153545-images-thumbs&n=13" alt="Super Mario Odyssey" width="200" height="200"/>
+    <h3>Super Mario Odyssey</h3>
+    <p class="price">Цена: 2999 ₽</p> <!-- Добавлен класс price -->
+    <p>Описание: Путешествуйте по красочным мирам с Марио в Super Mario Odyssey!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="12" data-platform="pc" data-genre="action" data-price="1499">
+    <img src="https://avatars.mds.yandex.net/i?id=46999341cbb75c84847721dbef53ded7c8ac310a-7554427-images-thumbs&n=13" alt="Cuphead" width="200" height="200"/>
+    <h3>Cuphead</h3>
+    <p class="price">Цена: 1499 ₽</p> <!-- Добавлен класс price -->
+    <p>Описание: Восхитительная ручная анимация и сложный геймплей в Cuphead!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<!-- Дополнительные товары -->
+<div class="product" data-id="8" data-platform="pc" data-genre="horror" data-price="1799">
+    <img src="https://avatars.mds.yandex.net/i?id=851c08127b17e2ff685ea7ae82d812df6ff1f831-3533663-images-thumbs&n=13" alt="Phasmophobia" width="200" height="200"/>
+    <h3>Phasmophobia</h3>
+    <p class="price">Цена: 1799 ₽</p> <!-- Добавлен класс price -->
+    <p>Описание: Станьте охотником за призраками в кооперативном horror-игре Phasmophobia!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="9" data-platform="ps5" data-genre="action" data-price="4899">
+    <img src="https://avatars.mds.yandex.net/i?id=efdd7afaece303dc6bc995b4c0394dc9e8bff6b5-5449367-images-thumbs&n=13" alt="Demon's Souls" width="200" height="185"/>
+    <h3>Demon's Souls</h3>
+    <p class="price">Цена: 4899 ₽</p> <!-- Добавлен класс price -->
+    <p>Описание: Испытайте тяжелую атмосферу и сложные бои в переосмысленной версии Demon's Souls!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="11" data-platform="switch" data-genre="multiplayer" data-price="2499">
+    <img src="https://avatars.mds.yandex.net/i?id=37a129e5cbdb60f1cf009a332fc6288fe56e1a56-3659204-images-thumbs&n=13" alt="Super Smash Bros. Ultimate" width="200" height="165"/>
+    <h3>Super Smash Bros. Ultimate</h3>
+    <p class="price">Цена: 2499 ₽</p> <!-- Добавлен класс price -->
+    <p>Описание: Сразитесь с друзьями в эпичных боях на различных аренах в Super Smash Bros. Ultimate!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="12" data-platform="pc" data-genre="simulation" data-price="2299">
+    <img src="https://avatars.mds.yandex.net/i?id=88184b7df6d26ca80d762b42ae3bf218817f78da-10207670-images-thumbs&n=13" alt="The Sims 4" width="200" height="200"/>
+    <h3>The Sims 4</h3>
+    <p class="price">Цена: 2299 ₽</p> <!-- Добавлен класс price -->
+    <p>Описание: Создайте и управляйте жизнью своих симов в The Sims 4!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="13" data-platform="xbox" data-genre="action" data-price="3499">
+    <img src="https://avatars.mds.yandex.net/i?id=03d2aa254c2c0f0c36c0602247cd110171efb42f-4467645-images-thumbs&n=13" alt="Gears 5" width="200" height="182"/>
+    <h3>Gears 5</h3>
+    <p class="price">Цена: 3499 ₽</p> <!-- Добавлен класс price -->
+    <p>Описание: Погрузитесь в захватывающий мир Gears 5 и защитите человечество от новых угроз!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+<div class="product" data-id="14" data-platform="nintendo" data-genre="adventure" data-price="2799">
+    <img src="https://avatars.mds.yandex.net/i?id=6b22481538cb78fbfa808e53c8ed6cd81cbf2e44-4377975-images-thumbs&n=13" alt="Animal Crossing: New Horizons" width="200" height="160"/>
+    <h3>Animal Crossing: New Horizons</h3>
+    <p class="price">Цена: 2799 ₽</p> <!-- Добавлен класс price -->
+    <p>Описание: Создайте свой остров мечты и исследуйте мир в Animal Crossing: New Horizons!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+
+<div class="product" data-id="15" data-platform="pc" data-genre="strategy" data-price="1999">
+    <img src="https://avatars.mds.yandex.net/i?id=ad2516b27f1e2f04d38f9ea0d07fe93e6fffe6a9-7887771-images-thumbs&n=13" alt="Civilization VI" width="200" height="200"/>
+    <h3>Civilization VI</h3>
+    <p class="price">Цена: 1999 ₽</p> <!-- Добавлен класс price -->
+    <p>Описание: Постройте свою цивилизацию и ведите её к величию в Civilization VI!</p>
+    <button class="add-to-cart">Добавить в корзину</button>
+</div>
+        </div>
+<div class="telegram-group">
+    <h4>Присоединяйтесь к нам в Telegram!</h4>
+    <a href="https://t.me/+On2UfiVHtrNkY2Ey" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.svgrepo.com/show/452115/telegram.svg" width="100" height="75" alt="Telegram Logo" style="background: transparent;">
+    </a>
+</div>
+
+    </main>
+
+    <footer>
+        <p>Copyright © 2024. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
